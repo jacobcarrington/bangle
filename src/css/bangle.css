@@ -1,0 +1,77 @@
+.bangle {
+  position: relative;
+  float: left;
+  width: 100%; }
+  .bangle__crop-box {
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    bottom: 0;
+    transform-origin: 100% 100%;
+    transform: rotate(-45deg); }
+  .bangle__image-box {
+    width: 100%;
+    background-color: #333;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform-origin: 100% 100%;
+    transform: rotate(45deg);
+    background-position: right center;
+    backgound-size: cover; }
+    .bangle__image-box:hover {
+      opacity: 0.8; }
+  .bangle--angle-45 .bangle__crop-box {
+    right: 0;
+    top: 0;
+    left: auto;
+    bottom: auto;
+    transform-origin: 100% 0%;
+    transform: rotate(45deg); }
+  .bangle--angle-45 .bangle__image-box {
+    right: 0;
+    top: 0;
+    left: auto;
+    bottom: auto;
+    transform: rotate(-45deg);
+    transform-origin: 100% 0%; }
+  .bangle--on-the-left {
+    float: right; }
+    .bangle--on-the-left .bangle__crop-box {
+      left: 0;
+      bottom: auto;
+      right: auto;
+      top: 0;
+      transform-origin: 0% 0%;
+      transform: rotate(-45deg); }
+    .bangle--on-the-left .bangle__image-box {
+      background-position: left center;
+      left: 0;
+      bottom: auto;
+      right: auto;
+      top: 0;
+      transform-origin: 0% 0%;
+      transform: rotate(45deg); }
+    .bangle--on-the-left.bangle--angle-45 .bangle__crop-box {
+      left: 0;
+      bottom: 0;
+      right: auto;
+      top: auto;
+      transform-origin: 0% 100%;
+      transform: rotate(45deg); }
+    .bangle--on-the-left.bangle--angle-45 .bangle__image-box {
+      left: 0;
+      bottom: 0;
+      right: auto;
+      top: auto;
+      transform-origin: 0% 100%;
+      transform: rotate(-45deg); }
+  .bangle--width-50-percent {
+    width: 50%; }
+  .bangle--width-40-percent {
+    width: 40%; }
+  .bangle--width-60-percent {
+    width: 60%; }
+  .bangle--width-33-percent {
+    width: 33.33333%; }

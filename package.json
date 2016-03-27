@@ -1,0 +1,16 @@
+{
+  "name": "bangle",
+  "version": "1.0.0",
+  "description": "Makes Banners with angles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "default"
+  },
+  "author": "Jacob Carrington",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  }
+}

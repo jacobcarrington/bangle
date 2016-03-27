@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bangle Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bangle.css">
+    <style>
+    .container {
+        margin: 50px auto;
+        max-width: 1200px;
+        overflow: hidden;
+    }
+    .container:after {
+        display: block;
+        content: '';
+        clear: both;
+
+    }
+    .container > div {
+            height: 450px;
+            background-color: #ccc;
+    }
+</style>
+</head>
+<body>
+<h3>Angle right @ -45degrees</h3>
+<div class="container">
+    <div class="bangle-1" data-bangle='{"side":"right", "angle":-45, "width":100}'>
+        <div class="bangle__crop-box">
+            <a href="#" class="bangle__image-box">
+
+            </a>
+        </div>
+    </div>
+</div>
+<h3>Angle right @ 45degrees</h3>
+<div class="container">
+    <div class="bangle-2" data-bangle='{"side":"right", "angle":45, "width":100}'>
+        <div class="bangle__crop-box">
+            <a href="#" class="bangle__image-box">
+
+            </a>
+        </div>
+    </div>
+</div>
+<h3>Angle left @ -45degrees</h3>
+<div class="container">
+    <div class="bangle-3" data-bangle='{"side":"left", "angle":-45, "width":100}'>
+        <div class="bangle__crop-box">
+            <a href="#" class="bangle__image-box">
+
+            </a>
+        </div>
+    </div>
+</div>
+<h3>Angle left @ 45degrees</h3>
+<div class="container">
+    <div class="bangle-4" data-bangle='{"side":"left", "angle":45, "width":100}'>
+        <div class="bangle__crop-box">
+            <a href="#" class="bangle__image-box">
+
+            </a>
+        </div>
+    </div>
+</div>
+<h3>2 Bangles</h3>
+<div class="container">
+    <div class="bangle-5" data-bangle='{"side":"right", "angle":-45, "width":50}'>
+        <div class="bangle__crop-box">
+            <a href="#" class="bangle__image-box" style="background-image: url(img/crocus-1261310_1920.jpg)">
+            </a>
+        </div>
+    </div>
+    <div class="bangle-6" data-bangle='{"side":"left", "angle":-45, "width":50}'>
+        <div class="bangle__crop-box">
+            <a href="#" class="bangle__image-box" style="background-image: url(img/crocus-6131_1920.jpg)">
+
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="bangle-7" data-bangle='{"side":"right", "angle":-45, "width":50}'>
+        <div class="bangle__crop-box">
+            <a href="#" class="bangle__image-box" style="background-image: url(img/crocus-1261310_1920.jpg)">
+            </a>
+        </div>
+    </div>
+
+    <div class="bangle-9" data-bangle='{"side":"left", "angle":45, "width":50}'>
+        <div class="bangle__crop-box">
+            <a href="#" class="bangle__image-box" style="background-image: url(img/crocus-6131_1920.jpg)">
+            </a>
+        </div>
+    </div>
+</div>
+<script src="js/bangle.2.0.js"></script>
+<script>
+(function($){
+    $('.bangle-1').bangle();
+    $('.bangle-2').bangle();
+    $('.bangle-3').bangle();
+    $('.bangle-4').bangle();
+    $('.bangle-5').bangle();
+    $('.bangle-6').bangle();
+    $('.bangle-7').bangle();
+    $('.bangle-8').bangle();
+    $('.bangle-9').bangle();
+})(jQuery)
+</script>
+</body>
+</html>
