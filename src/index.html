@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <title>Bangle Demo</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/bangle.css">
     <style>
+    body {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+    }
     .container {
         margin: 50px auto;
         max-width: 1200px;
@@ -19,11 +24,17 @@
     }
     .container > div {
             height: 450px;
-            background-color: #ccc;
-    }
+/*            background-color: #ccc;
+*/    }
 </style>
 </head>
 <body>
+<div class="container"><hgroup>
+    <h1>&#9698; Bangle &#9700;</h1>
+    <h2>Make Banners with Angles</h2>
+    <h4>By Jacob Carrington</h4>
+</hgroup>
+<hr></div>
 <h3>Angle right @ -45degrees</h3>
 <div class="container">
     <div class="bangle-1" data-bangle='{"side":"right", "angle":-45, "width":100}'>
